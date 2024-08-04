@@ -6,7 +6,7 @@ def loop():
  operator = input("select operator(+,-,*,/,**): ")
 
  if len(operator) > 2:
-    print("Error!, only 1 operator allowed. choose from +,-,*,/ only")
+    print("Error!, only 1 operator allowed. choose from +,-,*,/,** only")
  elif operator == "+":
     print("sum is: ", num1 + num2)
  elif operator == "-":
@@ -18,7 +18,7 @@ def loop():
  elif operator == "**":
     print("exponentation is: ", num1 ** num2)  
  else: 
-    print("ERROR!, your function was", (function) , "choose from +,-,*,/ only")  
+    print("ERROR!, your function was", operator , "choose from +,-,*,/,** only")  
 
  x = input("Press ANY key to start OR x to exit: ")
  if x == "x":
@@ -30,4 +30,4 @@ if x == "x":
      print("Script terminating. Goodbye.")
 else:
     loop()
-    
+ 
